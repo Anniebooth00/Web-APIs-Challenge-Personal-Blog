@@ -30,7 +30,7 @@ SO THAT I can showcase my thoughts and experiences.
 [![Posts Page Dark](./Assets/img/postsDrk.png)]
 
 ## Deployed Application
-[Link to Deployed Application](#) (Replace '#' with the URL to your deployed application.)
+[Link to Deployed Application](https://anniebooth00.github.io/Web-APIs-Challenge-Personal-Blog/index.html)
 
 ## Usage
 This application is ideal for anyone looking to maintain a personal blog to document and share personal experiences or thoughts.
