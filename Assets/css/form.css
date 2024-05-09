@@ -1,0 +1,38 @@
+/* Styles for the form element */
+/* This CSS will stop the page from scrolling */
+html, body {
+    overflow: hidden;
+  }
+  
+form {
+    display: flex; /* Uses Flexbox for layout, which allows for a more efficient arrangement of child elements compared to traditional block model. */
+    flex-direction: column; /* Aligns children of the form (labels, inputs, textareas, buttons) in a vertical stack. */
+    height: 100%; /* Sets the form to fill the entire height of its container. */
+}
+
+/* Universal styling for labels, inputs, textareas, and buttons within the form */
+form label, form input, form textarea, form button {
+    margin-bottom: 10px; /* Adds a bottom margin to each element to create space between successive elements. */
+}
+
+/* Specific styling for inputs and textareas within the form */
+form input, form textarea {
+    padding: 8px; /* Adds padding inside the inputs and textareas for better text visibility and a more clickable area. */
+    border: 1px solid #ccc; /* Adds a light gray border around inputs and textareas, giving them a defined boundary. */
+    width: 100%; /* Ensures inputs and textareas take up the full available width of their parent container, making the form look consistent. */
+}
+
+/* Styles for button elements */
+button {
+    background-color: black; /* Sets the button's background color to black. */
+    color: white; /* Sets the text color inside the button to white, ensuring high contrast for readability. */
+    padding: 10px 20px; /* Adds padding inside the button, making it larger and easier to interact with. */
+    border: none; /* Removes any default border that might be applied by the user agent stylesheet. */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button to indicate it can be clicked. */
+}
+
+/* Styles for button elements on hover */
+button:hover {
+    background-color: #333; /* Darkens the button's background color when hovered over to provide visual feedback to the user. */
+}
+

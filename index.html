@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- Defines the document type and version, HTML5 here. -->
+<html lang="en"> <!-- Starts the HTML document and specifies the language as English. -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document to UTF-8, which includes most characters from all human languages. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is optimized for mobile devices by setting the viewport width to match the device's width and the initial zoom level to 1. -->
+    <title>Create A Blog Post</title> <!-- Sets the title of the document that appears in the browser tab. -->
+    <link rel="stylesheet" href="Assets/css/styles.css"> <!-- Links to a CSS file for styling the page. -->
+    <link rel="stylesheet" href="Assets/css/form.css"> <!-- Links to another CSS file that might contain specific styles for forms. -->
+</head>
+<body>
+    <div class="main-container"> <!-- Primary container for the page content, used for layout control via CSS. -->
+        <aside class="left-img"> <!-- Container specifically for an image, possibly for aesthetic or branding purposes. -->
+            <img src="Assets/img/A-3D-geometric-shape.png" alt="Fluffy 3D abstract shape"> <!-- The image itself, with alt text that describes it, important for accessibility and SEO. -->
+        </aside>
+
+        <section id="form-container"> <!-- Container that wraps the form to create a blog post, isolating form from other content. -->
+            <header> <!-- Semantic element that typically contains introductory content or navigational links; here, used to house a functional image. -->
+                <img src="Assets/img/sun-icon.png" alt="Icon of a sun" id="toggle-dark-mode"> <!-- Image used for toggling dark mode, identified by an ID for scripting. -->
+            </header>
+            <h1>Create a Blog Post</h1> <!-- Main heading indicating the purpose of the form. -->
+            <form id="blog-form"> <!-- The form element where users input data, identified by an ID for scripting. -->
+                <label for="username">Username:</label> <!-- Label for the username input field; 'for' attribute links to the input's ID. -->
+                <input type="text" id="username" name="username" required> <!-- Text input field for the username, required for form submission. -->
+                
+                <label for="title">Blog Title:</label> <!-- Label for the blog title input field. -->
+                <input type="text" id="title" name="title" required> <!-- Text input field for the blog title, also required. -->
+                
+                <label for="content">Content:</label> <!-- Label for the content textarea. -->
+                <textarea id="content" name="content" required></textarea> <!-- Textarea for the blog content, required to ensure data is entered before submission. -->
+                
+                <button type="submit">Submit</button> <!-- Button to submit the form. -->
+            </form>
+            <div id="error-message" style="color: red;"></div> <!-- Container for displaying error messages, styled in red for visibility. -->
+        </section>
+    </div>
+
+    <script src="Assets/js/blog.js"></script> <!-- Script for handling blog-specific functionalities. -->
+    <script src="Assets/js/form.js"></script> <!-- Script specifically for handling form behaviors. -->
+    <script src="Assets/js/logic.js"></script> <!-- General script for additional logic needed across the page. -->
+</body>
+</html>

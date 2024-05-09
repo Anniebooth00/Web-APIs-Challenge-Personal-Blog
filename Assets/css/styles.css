@@ -1,0 +1,88 @@
+/* General styles applied to the whole page */
+html, body {
+    min-height: 100vh;  /* Ensures that the body takes at least the full height of the viewport */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: white; /* Sets background color to white */
+    color: black; /* Sets text color to black */
+    font-family: Arial, sans-serif; /* Sets the default font family */
+}
+
+/* Styles applied when dark mode is enabled */
+body.dark-mode {
+    background-color: #121212; /* Dark background for better readability in dark mode */
+    color: white; /* Light text color for contrast against dark background */
+}
+
+/* Styling for containers and images in dark mode */
+body.dark-mode .form-container,
+body.dark-mode .left-img {
+    background-color: #1e1e1e; /* Slightly lighter dark background for distinction */
+    box-shadow: 0 0 10px #000; /* Adds shadow for depth */
+}
+
+/* Dark mode styling for header and footer for uniform appearance */
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #1e1e1e; /* Consistent background color for header and footer */
+}
+
+/* Ensures header images are visible in dark mode by inverting their color */
+body.dark-mode header img {
+    filter: invert(1); /* Inverts the colors of the image */
+}
+
+/* Flexbox layout for the main container to organize content horizontally */
+.main-container {
+    display: flex;
+    flex-direction: row; /* Sets the direction of flex items along a row */
+    justify-content: flex-start; /* Aligns children to the start of the main axis */
+    align-items: stretch; /* Stretches items to fill the container vertically */
+    min-height: 100vh; /* Ensures it takes at least the full height of the viewport */
+    padding: 20px; /* Provides padding around the content */
+}
+
+/* Flexbox settings for image and form sections to control their sizing */
+.left-img, #form-container {
+    flex: 1; /* Flex grow factor, allows the element to grow to fill the space */
+    min-height: 50vh; /* Sets a minimum height for each section */
+}
+
+/* Ensures images in the left section scale correctly */
+.left-img img {
+    width: 100%; /* Full width of the parent element */
+    height: auto; /* Height adjusts automatically to keep aspect ratio */
+    object-fit: cover; /* Ensures the image covers the designated area without distortion */
+}
+
+/* Styles for the form container for visual separation and padding */
+#form-container {
+    padding: 20px; /* Inner padding */
+    border: 1px solid #ccc; /* Light gray border */
+    box-shadow: 0 0 10px #ccc; /* Subtle shadow for 3D effect */
+}
+
+/* Adjustments for spacing within the form */
+#blog-form {
+    padding-top: 20px; /* Padding at the top of the form */
+    gap: 20px; /* Space between elements in the form */
+}
+
+/* Flexbox properties to align elements in the header */
+header {
+    display: flex; /* Uses flexbox to layout child elements horizontally */
+    justify-content: end; /* Aligns children to the right */
+    align-items: end; /* Aligns children to the bottom of the container */
+    width: 100%; /* Full width of the container */
+}
+
+/* Fixed dimensions for images in the header for consistency */
+header img {
+    width: 50px; /* Fixed width for the image */
+    height: auto; /* Height adjusts automatically to maintain aspect ratio */
+}
+
+/* Styling for the main heading in the header */
+h1 {
+    margin-bottom: 20px; /* Adds space below the heading for visual separation */
+}

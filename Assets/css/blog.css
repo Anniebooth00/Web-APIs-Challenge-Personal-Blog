@@ -1,0 +1,44 @@
+/* Styles for the header element */
+header {
+    display: flex; /* Uses Flexbox layout, which provides a more efficient way to lay out, align, and distribute space among items in a container. */
+    justify-content: space-between; /* Aligns items in the header such that there is maximum space between them, typically used to separate elements on both ends. */
+    padding: 10px; /* Adds space inside the header element on all sides. */
+    background-color: #f0f0f0; /* Sets a light grey background color for the header. */
+}
+
+/* Styles for the main element */
+main {
+    padding: 20px; /* Adds space inside the main element on all sides. */
+    min-height: 80vh; /* Sets the minimum height of the main element to 80% of the viewport height, ensuring it takes substantial vertical space. */
+}
+
+/* Styles for div elements within the main element */
+main div {
+    margin-top: 50px; /* Adds space above each div in the main element. */
+    padding: 20px; /* Adds space inside each div on all sides. */
+    border-radius: 25px; /* Rounds the corners of the divs, making them appear as rounded rectangles. */
+}
+
+/* Styles for the footer element */
+footer {
+    text-align: center; /* Centers the text inside the footer. */
+    padding: 20px; /* Adds space inside the footer on all sides. */
+    background-color: #f0f0f0; /* Sets a light grey background color for the footer, matching the header. */
+}
+
+/* Styles for button elements */
+button {
+    padding: 10px 20px; /* Adds horizontal padding of 20px and vertical padding of 10px inside the button, making it larger and easier to click. */
+    margin: 5px; /* Adds space around the button, preventing it from touching other elements. */
+}
+
+/* Additional styles for elements with the class 'post' */
+.post {
+    border: 2px solid black; /* Adds a solid black border around the post divs, making them stand out against other content. */
+}
+
+/* Styles for the element with ID 'toggle-dark-mode' */
+#toggle-dark-mode {
+    cursor: pointer; /* Changes the mouse cursor to a pointer when hovering over the element, indicating it's clickable. */
+}
+
